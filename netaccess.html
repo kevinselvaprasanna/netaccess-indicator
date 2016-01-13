@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	 <title>CC Networks</title>
+
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css" type="text/css"/>
+<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+	body { padding-top: 70px; 
+		padding-left: 70px;
+	}
+	#content { width: 90%; 
+		max-width: 800px;}
+/*]]>*/-->
+</style>
+</head>
+
+<body>
+
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+<!--            <li class="active"><a href="/~nitin/">Home</a></li> -->
+            <li><a href="/">Home</a></li>
+            <li><a href="/account/logout">Logout</a></li>
+<!--            <li><a href="/~nitin/teaching/">Teaching</a></li>
+            <li><a href="/~nitin/research/">Research</a></li>
+-->
+<!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+<div id="content">
+<!-- Add actual content followed by footer -->
+
+       
+<h1>Authorized machines and daily usage</h1>
+<!--<div class="alert alert-info">
+<h2> Hostel Timing Restrictions</h2>
+<p>2015-Jan-27</p>
+<p> Hostel Network Shutdown from 0000-0500 and 0800-1400</p>
+</div>-->
+<!--<div class="alert alert-warning"><h2>Firewall Test</h2>
+<p>2014-Dec-19</p>
+<p>
+Note that we are currently testing some new firewall options from 
+different vendors in the hostel zone.  If you are in the hostel zone 
+and find that netaccess is not working for you, then please try
+browsing to a regular HTTP (not HTTPS) site, such as 
+<a href="http://www.blackle.com/">http://www.blackle.com/</a>
+and you should find yourself taken to a login page.
+
+<p>In case of any difficulties, please inform 5999/5987.  In case
+they are not able to resolve the problem, please inform nitin@ee.iitm.ac.in
+
+<p>Thank you for your cooperation.  Any feedback on user experience is welcome.
+<div class="alert alert-info"><b>Note</b>: You can always continue to 
+access the internet using <code>hproxy.iitm.ac.in</code> with port <code>3128</code>
+as your proxy settings.  The firewall approach is NOT essential for internet access.
+</div>
+</div>-->
+
+<div class="alert alert-success"><b>Username: </b> ee14b028 
+<b>Total download:</b> 236.22 MB<p>
+<strong>Note:</strong> The default quota per user per day is <strong>1 GB</strong>.
+</div>
+
+<p>This is the list of machines that have at some point in the past
+  authenticated against your account.  The time up to which the
+  authentication is valid and the amount of data that has been
+  downloaded on each machine is shown against the respective machine
+  ID.  Note that this information is updated here only once in 5
+  minutes, so it may not be completely up to date.
+
+<p>The <b>download</b> column is showing only your usage
+  for <em>today</em>: 13 Jan, 2016.
+
+<p>If you find any machines here that you feel you have not used,
+  someone may have got your password and misused it. <b>Remember that
+  you are responsible for all activity related to your account</b>.
+  If this happens, you should immediately change your password (use
+  the links provided
+  at <a href="http://cc.iitm.ac.in/">http://cc.iitm.ac.in/</a> for
+  this purpose). 
+  
+<div class='alert alert-info'>Your present IP address is <strong>10.22.41.63</strong>
+You may be able to <a href="/account/approve"<span class="label label-info">approve</span></a> this address for proxy-less access to the internet.</div>
+
+  <table class="table">
+	<tr>
+	  <th>MAC</th> <th align="center">IP</th> <th>Valid till</th> 
+	  <th>Download today</th> <th>Status</th>
+	</tr>
+	<tr><td>B8:2A:72:C7:86:9C</td> <td>10.22.41.63</td> <td>14 Jan 2016, 17:01</td> <td>236.22 MB</td><td><span class='label label-success'>Active</span></td><td><a href="/account/revoke/10.22.41.63"><span class='label label-danger'>Delete</span></a></td></tr>
+<tr><td><E:XP:IR:ED:></td> <td>10.22.41.40</td> <td>12 Jan 2016, 21:01</td> <td>     0 B</td><td><span class='label label-default'>Inactive</span></td><td></td></tr>
+  </table>
+  </div> <!-- the content div -->
+</body>
+</html>
