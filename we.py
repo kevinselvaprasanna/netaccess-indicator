@@ -7,12 +7,15 @@
 # 		h = datetime.now().strftime('%H')
 # 		me.refresh(0)
 
-import os
-hostname = "netaccess.iitm.ac.in" #example
-response = os.system("ping -c 1 " + hostname)
+# import os
+# hostname = "netaccess.iitm.ac.in" #example
+# response = os.system("ping -c 1 " + hostname)
 
-#and then check the response...
-if response == 0:
-  print hostname, 'is up!'
-else:
-  print hostname, 'is down!'
+# #and then check the response...
+# if response == 0:
+#   print hostname, 'is up!'
+# else:
+#   print hostname, 'is down!'
+
+import ctypes  # An included library with Python install.
+ctypes.windll.user32.MessageBoxA(0, "Your text", "Your title", 1)

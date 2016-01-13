@@ -12,7 +12,7 @@ import MySQLdb
 import os
 #import gtk as Gtk
 
-
+roll= ""
 icon = '/usr/share/icons/ubuntu-mono-light/apps/22/distributor-logo.svg'
 def show():
 		with open("/home/kevinselvaprasanna/netaccess-indicator/netaccess.html",'r') as f:
@@ -33,7 +33,7 @@ def show():
 					print "Refresh ended....."
 
 
-def login():
+def login(roll, password):
 		# New browser object
 		br = Browser()
 
@@ -121,7 +121,7 @@ def refresh(w):
 	hostname = "netaccess.iitm.ac.in" 
 	response = os.system("ping -c 1 " + hostname)
 	if response == 0:
-	  login()
+	  login(roll,password)
 	  show()
 	else:
 	  print hostname, 'is down!'
